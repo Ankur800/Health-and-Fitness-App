@@ -40,6 +40,7 @@ public class UserController extends BaseController {
 
         modelMap.addAttribute("BMI", bmi);
 
+        //Awards category and Tier calculation
         Awards awards = new Awards();
         if(user.total_task_completed == null) {
             awards.score = Long.valueOf(0);
